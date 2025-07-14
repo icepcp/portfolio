@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Hello! - Myat</title>
+	<meta name="description" content="Welcome to my portfolio" />
+</svelte:head>
+
 <script lang="ts">
 	import { getActivities, type Activity } from '$lib/activity';
 	import { onMount } from 'svelte';

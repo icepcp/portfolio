@@ -26,6 +26,16 @@ h4 {
 	@apply text-sm text-slate-600;
 }
 
+.full-viewport-height {
+  height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  .full-viewport-height {
+    height: 100dvh;
+  }
+}
+
 :root {
 	--radius: 0.625rem;
 	--background: oklch(1 0 0);

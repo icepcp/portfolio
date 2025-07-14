@@ -16,6 +16,8 @@
 	"devDependencies": {
 		"@internationalized/date": "^3.8.1",
 		"@lucide/svelte": "^0.515.0",
+		"@sveltejs/adapter-auto": "^6.0.1",
+		"@sveltejs/adapter-cloudflare": "^7.0.5",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
@@ -46,8 +48,6 @@
 		"@fontsource-variable/bricolage-grotesque": "^5.2.8",
 		"@fontsource-variable/instrument-sans": "^5.2.6",
 		"@fontsource/instrument-serif": "^5.2.6",
-		"@sveltejs/adapter-auto": "^6.0.1",
-		"@sveltejs/adapter-cloudflare": "^7.0.5",
 		"svelte-portal": "^2.2.1"
 	}
 }

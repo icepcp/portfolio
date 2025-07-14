@@ -9,7 +9,7 @@
 	let { children } = $props();
 </script>
 
-<div class="relative flex h-screen w-full items-center justify-center overflow-hidden bg-black">
+<div class="relative flex full-viewport-height w-full items-center justify-center overflow-hidden bg-black">
 	<div
 		class="h-full w-full transform bg-slate-50 p-1 transition-all duration-300"
 		class:scale-95={$modalCount > 0}

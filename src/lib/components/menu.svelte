@@ -5,6 +5,13 @@
 	import { Menu } from '@lucide/svelte';
 
 	let dropdownOpen = false;
+
+	const navigationItems = [
+		{ href: '/', label: 'Home' },
+		{ href: '/experiences', label: 'Experiences' },
+		{ href: '/certificates', label: 'Certificates' },
+		{ href: '/about', label: 'About this Site' }
+	];
 </script>
 
 <DropdownMenu.Root bind:open={dropdownOpen}>
@@ -16,10 +23,10 @@
 
 	{#if dropdownOpen}
 		<Modal slot="modal" on:close={() => (dropdownOpen = false)}>
-			<DropdownMenu.Content sideOffset={4} collisionPadding={8}>
+			<DropdownMenu.Content sideOffset={4} collisionPadding={8} class="bg-slate-200/70 backdrop-blur-xs">
 				<div class="flex gap-x-5 p-5">
 					<div class="flex flex-col justify-between sm:flex-row">
-						<h1 class="relative flex w-min flex-col bg-white text-3xl leading-7 text-slate-600">
+						<h1 class="relative flex w-min flex-col text-3xl leading-7 text-slate-600">
 							<div class="overflow-hidden">
 								<span class="a1 z-1 block">AUNG</span>
 							</div>
@@ -32,18 +39,11 @@
 						</h1>
 					</div>
 					<div class="flex flex-col gap-y-2">
-						<a href="/" class="flex-1" on:click={() => (dropdownOpen = false)}>
-							<Button variant="outline" class="w-full">Home</Button>
-						</a>
-						<a href="/experiences" class="flex-1" on:click={() => (dropdownOpen = false)}>
-							<Button variant="outline" class="w-full">Experiences</Button>
-						</a>
-						<a href="/certificates" class="flex-1" on:click={() => (dropdownOpen = false)}>
-							<Button variant="outline" class="w-full">Certificates</Button>
-						</a>
-						<a href="/about" class="flex-1" on:click={() => (dropdownOpen = false)}>
-							<Button variant="outline" class="w-full">About this Site</Button>
-						</a>
+						{#each navigationItems as item}
+							<a href={item.href} class="flex-1" on:click={() => (dropdownOpen = false)}>
+								<Button variant="outline" class="w-full bg-slate-200/70">{item.label}</Button>
+							</a>
+						{/each}
 					</div>
 				</div>
 			</DropdownMenu.Content>
