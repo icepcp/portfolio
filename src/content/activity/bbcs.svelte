@@ -112,11 +112,6 @@
 		class="mx-auto w-[75%] rounded-md ring ring-slate-300"
 	/>
 	<p>
-		Check it out at <a href="https://buildingblocs.sg" target="_blank" rel="noopener noreferrer"
-			>buildingblocs.sg</a
-		>
-	</p>
-	<p>
 		Throughout 2024, I had contributed greatly to BuildingBloCS. For the 2024 June Conference, I was
 		in charge of Audio-Visual, recording all workshops, ensuring that presentations went smoothly,
 		and helped out with general manpower as well. During that period, me and Du Yuhan, the

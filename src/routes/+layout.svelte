@@ -14,7 +14,7 @@
 		class="h-full w-full transform bg-slate-50 p-1 transition-all duration-300"
 		class:scale-95={$modalCount > 0}
 		class:brightness-50={$modalCount > 0}
-		class:rounded-sm={$modalCount > 0}
+		class:rounded-lg={$modalCount > 0}
 	>
 		<div
 			class="relative flex h-full w-full flex-col overflow-hidden rounded-md border border-slate-300"

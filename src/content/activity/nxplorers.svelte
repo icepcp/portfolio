@@ -2,7 +2,7 @@
 	import Activity from '$lib/components/activity.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	export const metadata = {
-		title: 'Participation Certificate',
+		title: 'Shell NXplorers',
 		date: '2023',
 		logo: {
 			src: '/activity/nxplorers/logo.png',
